@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>About Me (Rasyid Maulid Majid)</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,700|Roboto:300,400,700|Noto+Serif:400"
+    rel="stylesheet" type="text/css">
+  <style>
+    body {
+      font-family: Roboto, Arial, sans-serif;
+      font-weight: 300;
+      background-color: #f6f6f6;
+    }
+
+    p {
+      display: inline;
+    }
+
+    a,
+    span {
+      color: #4c92c1;
+      text-decoration: none;
+    }
+
+    .email,
+    .site,
+    .github,
+    .phone-number,
+    .address {
+      margin-bottom: .4em;
+      font-size: 1em;
+    }
+
+    ul {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .card {
+      /*background-color: #fefefe;
+  box-shadow: 1px 1px 14px -5px rgba(0,0,0,0.5);
+  border-radius: 2px;*/
+      margin-bottom: 15px;
+    }
+
+    .header.card {
+      margin-top: 15px;
+      margin-right: 15px;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 0 15px 0 20px;
+      border-bottom: 1px dashed #CFCFCF;
+    }
+
+    section.card {
+      padding: 15px 15px 22.5px 20px;
+    }
+
+    .header {
+      overflow: auto;
+      margin-left: 6px;
+      margin-right: 12px;
+    }
+
+    .skill {
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 1em;
+      margin-bottom: .4em;
+      color: #4c92c1;
+      font-weight: 400;
+    }
+
+    .skills p {
+      font-size: 1em;
+    }
+
+    #name {
+      font-family: "Open Sans", Arial, sans-serif;
+      font-size: 3em;
+      font-weight: 400;
+      color: #555;
+      float: left;
+      margin: .1em .1em .2em;
+    }
+
+    #resume-container {
+      width: 900px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      margin-top: 0;
+      margin-bottom: .4em;
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 1.2em;
+    }
+
+    .left-content {
+      float: left;
+      width: 32%;
+      margin-left: 6px;
+    }
+
+    .left-content .section-header {
+      font-weight: 400;
+      color: #BC1B39;
+      text-transform: uppercase;
+    }
+
+    .left-content .section-content {
+      font-weight: 300;
+    }
+
+    .left-content .title {
+      font-weight: 400;
+      margin-bottom: .5em;
+      color: #4c92c1;
+    }
+
+    .left-content .card {
+      border-bottom: 1px dashed #CFCFCF;
+    }
+
+    .right-content {
+      width: 64%;
+      margin-right: 15px;
+      float: right;
+    }
+
+    .right-content .section-header {
+      /*color: #000;*/
+      color: #BC1B39;
+      text-transform: uppercase;
+    }
+
+    .right-content {
+      border-left: 1px dashed #CFCFCF;
+    }
+
+    .section-content {
+      overflow: auto;
+    }
+
+    .title {
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 1em;
+      font-weight: 300;
+      margin-bottom: .2em;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+
+    .duration {
+      font-family: Roboto, Arial, sans-serif;
+      font-weight: 300;
+      color: #3c82b1;
+      margin-top: .2em;
+      margin-bottom: .3em;
+      text-align: right;
+    }
+
+    .occupation {
+      font-size: 1em;
+      font-family: Roboto, Arial, sans-serif;
+      font-weight: 400;
+      margin-bottom: .5em;
+    }
+
+    .languages {
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 1em;
+      font-weight: 300;
+    }
+
+    .list {
+      list-style-type: none;
+      font-size: 1em;
+    }
+
+    .location {
+      font-size: 1em;
+      font-weight: 300;
+      margin-bottom: .1em;
+    }
+
+    .left {
+      float: left;
+      width: 45%;
+      clear: both;
+    }
+
+    .right {
+      float: right;
+      width: 55%;
+    }
+
+    ul.list {
+      list-style-type: circle;
+      padding-left: 1.1rem;
+    }
+
+    ul.list li {
+      line-height: 135%;
+      margin-bottom: .2em;
+    }
+
+    ul.list li:before {
+      display: inline-block;
+      width: 0;
+      margin-left: 0;
+    }
+
+    .project,
+    .employment,
+    .education,
+    .skills {
+      margin-bottom: .8em;
+    }
+
+    .education-info .title {
+      margin-bottom: .2em;
+      line-height: 130%;
+    }
+
+    .education.last {
+      margin-bottom: .8em !important;
+    }
+
+    .education .grade {
+      font-size: 1em;
+    }
+
+    .project-info {
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+
+    .last {
+      margin-bottom: 0 !important;
+    }
+
+    .term {
+      font-size: 1.75em;
+      font-weight: 200;
+      color: #000;
+    }
+
+    #skills-container,
+    .contact {
+      margin-bottom: 0;
+    }
+
+    .interests,
+    .subtitle {
+      font-size: 1em;
+      margin-bottom: .2em;
+    }
+
+    .project .title,
+    .employment .title {
+      color: #4c92c1;
+      font-weight: 400;
+    }
+
+    .employment .summary {
+      font-size: 1em;
+      margin-bottom: .4em;
+    }
+
+    #awards .summary {
+      font-size: 1em;
+    }
+
+    #summary {
+      font-size: 1em;
+    }
+
+    .contact .site {
+      font-size: .9em;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="resume-container">
+    <div class="header card">
+      <h1 id="name">
+        Rasyid Maulid Majid
+      </h1>
+    </div>
+    <div class="left-content">
+      <section class="card">
+        <div class="section-header">Contact</div>
+        <div class="section-content" id="contact">
+          <div class="contact">
+            <div class="address">
+              Jakarta, Indonesia
+            </div>
+            <div class="email">
+              <a href="mailto:san.akdam@gmail.com">rasyidmaulidmajid@gmail.com</a>
+            </div>
+
+            <div class="site">
+              Linkedin: <a href="https://www.linkedin.com/in/rasyid-maulid-majid-0321a810a/">Rasyid Maulid Majid</a>
+            </div>
+
+            <div class="site">
+              Github: <a href="https://github.com/rasyidmm">rasyidmm</a>
+            </div>
+
+            <div class="phone-number last">
+              <a href="tel:082134897384">082134897384</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-header">Technical Skills</div>
+        <div class="section-content" id="technical-skills">
+          <div id="skills-container">
+            <div class="skills">
+              <div class="skill"><strong>Skill</strong></div>
+              <p>
+                GO, GRPC, Cron, Redis, RabbitMQ, Jaeger Tracing, PostgresSQL, MySQL, Git, Docker, GORM, SQLC, Fiber, Gin
+              </p>
+            </div>
+
+            <div class="skills">
+              <div class="skill"><strong>Personal</strong></div>
+
+              <p>
+                Teamwork, Time Management, Creativity
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-header">Education</div>
+        <div class="section-content" id="education">
+          <div class="education last">
+            <div class="education-info">
+              <div class="title">
+                Undergraduate Computer Science
+                <br>at Universitas Dian Nuswantoro
+              </div>
+              <div class="duration">
+                2013 - 2017
+              </div>
+              <p><strong>Grade : </strong>3.15</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-header">Languages</div>
+        <div class="section-content" id="technical-skills">
+          <div id="skills-container">
+            <div class="skills">
+              <div class="skill"><strong>Indonesian</strong></div>
+              (Native Speaker)
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="right-content">
+      <section class="card">
+        <div class="section-header">Summary</div>
+        <div class="section-content" id="summary">
+          I am a backend developer with 5 years of experience making and developing software
+          application based on system requirements
+        </div>
+      </section>
+      <section class="card">
+        <div class="section-header">Work Experience</div>
+        <div class="section-content" id="employment">
+
+          <div class="employment">
+            <div class="employment-info">
+              <div class="title">
+                <a href="https://aladinmall.id/" target="_blank">
+                  <strong>Backend Engineer </strong>at PT. MNC Aladin Indonesia (E-Commerce App)
+                </a>
+              </div>
+              <a class="content" href="https://aladinmall.id/" target="_blank">https://aladinmall.id/</a>
+              <div class="duration">
+                <p>January 2022 - Present</p>
+              </div>
+            </div>
+            <div class="info">
+              <ul class="list">
+                <li>
+                  Development Enabler AladinMall API
+                </li>
+                <li>
+                  Development Aladin Shop+ API
+                </li>
+                <li>
+                  Development Dashboard Laporan BKB
+                </li>
+                <li>
+                  Implementation Jaeger Tracing
+                </li>
+                <li>
+                  Develop feature by the product team in using Go language
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="employment">
+            <div class="employment-info">
+              <div class="title">
+                <a>
+                  <strong>Backend Engineer </strong>at PT Lawencon Internasional
+                </a>
+
+              </div>
+              <div class="duration">
+                <p>November 2018 - December 2021</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="employment">
+            <div class="employment-info">
+              <div class="title">
+                <a>
+                  <strong>Backend Engineer </strong>at PT. Bank Rakyat Indonesia <em> Client of  PT Lawencon</em>
+                </a>
+
+              </div>
+              <div class="duration">
+                <p>January 2020 - December 2021</p>
+              </div>
+            </div>
+            <div class="info">
+              <ul class="list">
+                <li>
+                  Development Teller System NDS
+                </li>
+                <li>
+                  Develop feature by team leader
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="employment">
+            <div class="employment-info">
+              <div class="title">
+                <a>
+                  <strong>Backend Engineer </strong>at PT Lawencon Internasional
+                </a>
+              </div>
+              <div class="duration">
+                <p>August 2020 - December 2020</p>
+              </div>
+            </div>
+            <div class="info">
+              <ul class="list">
+                <li>
+                 Develop Reimbursement System Using Java Spring Boot
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="employment">
+            <div class="employment-info">
+              <div class="title">
+                <a>
+                  <strong>Backend Engineer </strong>at PT Bank BTPN <em> Client of  PT Lawencon</em>
+                </a>
+              </div>
+              <div class="duration">
+                <p>November 2019 - July 2020)</p>
+              </div>
+            </div>
+            <div class="info">
+              <ul class="list">
+                <li>
+                  Maintenance system apps for loan and insurance
+                </li>
+                <li>
+                  Maintenance payment system
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="employment">
+            <div class="employment-info">
+              <div class="title">
+                <a>
+                  <strong>Backend Engineer </strong>at PT Bank Mandiri <em> Client of  PT Lawencon</em>
+                </a>
+              </div>
+              <div class="duration">
+                <p>November 2018 - October 2019</p>
+              </div>
+            </div>
+            <div class="info">
+              <ul class="list">
+                <li>
+                  Develop Integration System Payment Using SoftwareAG
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
